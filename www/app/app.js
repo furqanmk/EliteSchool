@@ -20,6 +20,7 @@ eliteSchool.run(function($ionicPlatform) {
 eliteSchool.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
     .state('home', {
+        abstract: true,
         url: '/home',
         templateUrl: 'app/home/home.html'
     })
@@ -28,5 +29,5 @@ eliteSchool.config(function ($stateProvider, $urlRouterProvider) {
         templateUrl: '/app/layout/menu-layout.html'
     });
     
-    $urlRouterProvider.otherwise('/app');
+    $urlRouterProvider.otherwise('/home');
 }); 
