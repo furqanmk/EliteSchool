@@ -22,7 +22,11 @@ eliteSchool.config(function ($stateProvider, $urlRouterProvider) {
     .state('home', {
         url: '/home',
         templateUrl: 'app/home/home.html'
+    })
+    .state('sidemenu', {
+        url: '/app',
+        templateUrl: '/app/layout/menu-layout.html'
     });
     
-    $urlRouterProvider.otherwise('/home');
-});
+    $urlRouterProvider.otherwise('/app');
+}); 
